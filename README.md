@@ -4,20 +4,23 @@
 
 章节列表：
 
-1. [网络模型及网络设备][network_model_and_devices] TODO
-1. [IP地址][ip_address] TODO
+1. [网络模型及网络设备][network-model-and-devices] TODO
+1. [IP地址][ip-address] TODO
 1. [子网分割][subnetting] TODO
 1. [VLAN][vlan] TODO
 1. [NAT][nat] TODO
 1. [DHCP][dhcp] TODO
+1. [DNS][dns] TODO
+1. [TCP和UDP][tcp-udp] TODO
 1. 虚拟机中的网络 TODO
 1. Openstack中的网络 TODO
 1. K8S中的网络 TODO
 
-[network_model_and_devices]: network_model_and_devices.md
-[ip_address]: ip_address.md
+[network-model-and-devices]: network-model-and-devices.md
+[ip-address]: ip-address.md
 [subnetting]: subnetting.md
 [vlan]: vlan.md
 [nat]: nat.md
 [dhcp]: dhcp.md
-
+[dns]: dns.md
+[tcp-udp]: tcp-udp.md
