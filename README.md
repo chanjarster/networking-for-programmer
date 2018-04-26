@@ -4,8 +4,8 @@
 
 章节列表：
 
-1. [网络模型及网络设备][network-model-and-devices] TODO
-1. [IP地址][ip-address] TODO
+1. [网络模型及网络设备][network-model-and-devices]
+1. [IP地址][ip-address]
 1. [子网分割][subnetting] TODO
 1. [VLAN][vlan] TODO
 1. [NAT][nat] TODO
