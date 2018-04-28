@@ -64,7 +64,7 @@ MAC地址是网卡的物理地址，该地址理论上是全世界唯一的，�
 
 当PC1要和PC3通信的时候，比如``ping 192.168.2.10``，它会发现PC3和自己不在同一个子网中（究竟是如何知道的你现在不用关心，我们会在[子网分割][subnetting]章节中详细讲解），那它数据交给路由器1，路由器1它会读取Packet（Network层的PDU）中的目的地IP地址，发现是192.168.2.10，结合其内部的路由表（关于路由表本文不做讲解）决定将其转发到交换机2，交换机2再转发到PC3.
 
-我们再考虑一个更贴近现实的问题，我们的电脑是访问``baidu.com``的呢？
+我们再考虑一个更贴近现实的问题，我们的电脑是如何访问到``baidu.com``的呢？
 
 实际上当访问``baidu.com``的时候你的数据是经过多层路由器，最终到达baidu服务器的，如下图：
 
@@ -84,11 +84,11 @@ MAC地址是网卡的物理地址，该地址理论上是全世界唯一的，�
 
 如果PC1要和PC3通信，其详细步骤是这样的：
 
-1. PC1封装数据
-   1. 封装Packet P，源IP地址：PC1的IP地址，目标IP地址：PC3的IP地址）
-   1. 封装Frame F1，源MAC地址：PC1的MAC地址，目标MAC地址：路由器1左侧端口的MAC地址），它的载荷是P
+1. PC1发送数据
+   1. 封装Packet P，源IP地址：PC1的IP地址，目标IP地址：PC3的IP地址
+   1. 封装Frame F1，源MAC地址：PC1的MAC地址，目标MAC地址：路由器1左侧端口的MAC地址，它的载荷是P
 1. 路由器1转发数据
-   1. 提取P，获得目标IP地址
+   1. 左侧接口收到数据，提取P，获得目标IP地址
    1. 查找路由表，发现应该将数据转发到右侧端口
    1. 封装Frame F2，源MAC地址：路由器1右侧端口的MAC地址，目标MAC地址：PC3的MAC地址，它的载荷是P
 1. PC3收到数据
@@ -98,10 +98,12 @@ MAC地址是网卡的物理地址，该地址理论上是全世界唯一的，�
 
 ## 参考资料
 
+* [OSI模型][osi]
 * [NetworKing CCNA: OSI - TCP/IP Model][networking-ccna-osi-tcp-ip-model]
 * [ARP协议][arp-protocol]
 
 
+[osi]: https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B
 [networking-ccna-osi-tcp-ip-model]: https://www.youtube.com/watch?v=l_OPR2yh2co
 [arp-protocol]: https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE
 [dns]: dns.md
