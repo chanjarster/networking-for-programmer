@@ -101,10 +101,13 @@ MAC地址是网卡的物理地址，该地址理论上是全世界唯一的，�
 * [OSI模型][osi]
 * [NetworKing CCNA: OSI - TCP/IP Model][networking-ccna-osi-tcp-ip-model]
 * [ARP协议][arp-protocol]
-
+* [Address Resolution Protocol (ARP) in less than 5 minutes][arp-youtube]
+* [Packet Traveling][packet-traveling-youtube]
 
 [osi]: https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B
 [networking-ccna-osi-tcp-ip-model]: https://www.youtube.com/watch?v=l_OPR2yh2co
 [arp-protocol]: https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE
 [dns]: dns.md
 [subnetting]: subnetting.md
+[arp-youtube]: https://www.youtube.com/watch?v=QPi5Nvxaosw
+[packet-traveling-youtube]: https://www.youtube.com/watch?v=rYodcvhh7b8
