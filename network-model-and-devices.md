@@ -103,6 +103,7 @@ MAC地址是网卡的物理地址，该地址理论上是全世界唯一的，�
 * [ARP协议][arp-protocol]
 * [Address Resolution Protocol (ARP) in less than 5 minutes][arp-youtube]
 * [Packet Traveling][packet-traveling-youtube]
+* [鳥哥的Linux私房菜 - 基礎網路概念][vbird-network-basics]
 
 [osi]: https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B
 [networking-ccna-osi-tcp-ip-model]: https://www.youtube.com/watch?v=l_OPR2yh2co
@@ -111,3 +112,4 @@ MAC地址是网卡的物理地址，该地址理论上是全世界唯一的，�
 [subnetting]: subnetting.md
 [arp-youtube]: https://www.youtube.com/watch?v=QPi5Nvxaosw
 [packet-traveling-youtube]: https://www.youtube.com/watch?v=rYodcvhh7b8
+[vbird-network-basics]: http://linux.vbird.org/linux_server/0110network_basic.php
